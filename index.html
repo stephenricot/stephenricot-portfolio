@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background: #fefcf5;
@@ -18,11 +17,9 @@
             line-height: 1.5;
             scroll-behavior: smooth;
         }
-
         html {
             scroll-padding-top: 80px;
         }
-
         nav {
             background: #ffffffea;
             backdrop-filter: blur(8px);
@@ -55,7 +52,6 @@
         .nav-links a:hover {
             color: #b4533b;
         }
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -109,7 +105,6 @@
         .btn:hover {
             background: #9a3e2a;
         }
-
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
@@ -125,7 +120,6 @@
             border: 1px solid #e2d9d0;
             color: #2c2c3a;
         }
-
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -155,6 +149,7 @@
         .project-links {
             display: flex;
             gap: 1rem;
+            margin-top: 0.5rem;
         }
         .project-links a {
             color: #b4533b;
@@ -162,7 +157,20 @@
             font-weight: 500;
             font-size: 0.9rem;
         }
-
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: #b4533b;
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+            padding: 0;
+            margin: 0.25rem 0 0.5rem 0;
+            display: inline-block;
+        }
+        .read-more-btn:hover {
+            text-decoration: underline;
+        }
         .experience-item {
             background: white;
             padding: 1.4rem;
@@ -187,7 +195,6 @@
         .experience-item li {
             margin-bottom: 0.4rem;
         }
-
         .contact-form {
             background: white;
             padding: 1.8rem;
@@ -246,7 +253,6 @@
     </style>
 </head>
 <body>
-
 <nav>
     <div class="logo">Stephen Ricot</div>
     <div class="nav-links">
@@ -258,28 +264,20 @@
         <a href="#contact">Contact</a>
     </div>
 </nav>
-
 <div class="container">
-    <!-- Myself -->
     <div class="myself">
         <h1>Stephen Joshua Ricot</h1>
         <p>Computer Engineer · Junior Implementation Specialist · Web Developer</p>
         <p style="font-size: 0.95rem;">Quezon City, Philippines | stephenricot@gmail.com | +63 956 7048 232</p>
         <a href="#contact" class="btn">Get in touch</a>
     </div>
-
-    <!-- About Me -->
     <section id="about">
         <h2>About</h2>
         <p>Results-driven Computer Engineering graduate with hands-on experience in software implementation, web development, and Agile project coordination. Skilled in SQL, Azure DevOps, and system workflow optimization. Proven ability to manage full project lifecycles, improve system adoption, and support scalable technical solutions.</p>
-        <p style="margin-top: 0.8rem;">BS in Computer Engineering – Polytechnic University of the Philippines (2020–2024)<br>
-        Open to remote, hybrid, or on-site roles in software development, implementation, and project coordination.</p>
+        <p style="margin-top: 0.8rem;">BS in Computer Engineering – Polytechnic University of the Philippines (2020–2024)<br>Open to remote, hybrid, or on-site roles in software development, implementation, and project coordination.</p>
     </section>
-
-    <!-- Experience -->
     <section id="experience">
         <h2>Experience</h2>
-        
         <div class="experience-item">
             <h3>Junior Implementation Specialist</h3>
             <div class="experience-date">Macky Champ Software Ventures Inc. | Nov 2024 – Dec 2025</div>
@@ -292,7 +290,6 @@
                 <li>Created technical documentation and process diagrams using Draw.io, reducing support queries by approximately 15%.</li>
             </ul>
         </div>
-
         <div class="experience-item">
             <h3>Web Developer Intern</h3>
             <div class="experience-date">Lamina Studios, LLC | Aug 2023 – Oct 2023</div>
@@ -304,33 +301,12 @@
             </ul>
         </div>
     </section>
-
-    <!-- Skills -->
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
-            <span class="skill-card">HTML/CSS</span>
-            <span class="skill-card">C#</span>
-            <span class="skill-card">SQL</span>
-            <span class="skill-card">Python</span>
-            <span class="skill-card">Azure DevOps</span>
-            <span class="skill-card">Git</span>
-            <span class="skill-card">Trello</span>
-            <span class="skill-card">Draw.io</span>
-            <span class="skill-card">MySQL</span>
-            <span class="skill-card">Agile / SDLC</span>
-            <span class="skill-card">Software Implementation</span>
-            <span class="skill-card">System Documentation</span>
-            <span class="skill-card">Client Training</span>
-            <span class="skill-card">Data Validation</span>
-            <span class="skill-card">Machine Learning Fundamentals</span>
-            <span class="skill-card">NLP</span>
-            <span class="skill-card">Data Preprocessing</span>
-            <span class="skill-card">Google Colab</span>
+            <span class="skill-card">HTML/CSS</span><span class="skill-card">C#</span><span class="skill-card">SQL</span><span class="skill-card">Python</span><span class="skill-card">Azure DevOps</span><span class="skill-card">Git</span><span class="skill-card">Trello</span><span class="skill-card">Draw.io</span><span class="skill-card">MySQL</span><span class="skill-card">Agile / SDLC</span><span class="skill-card">Software Implementation</span><span class="skill-card">System Documentation</span><span class="skill-card">Client Training</span><span class="skill-card">Data Validation</span><span class="skill-card">Machine Learning Fundamentals</span><span class="skill-card">NLP</span><span class="skill-card">Data Preprocessing</span><span class="skill-card">Google Colab</span>
         </div>
     </section>
-
-    <!-- Certifications -->
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="experience-item">
@@ -342,8 +318,6 @@
             </ul>
         </div>
     </section>
-
-    <!-- Projects -->
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
@@ -362,10 +336,34 @@
                     <a href="https://github.com/stephenricot/Wheelchair-DC-Motor-Controller" target="_blank">GitHub</a>
                 </div>
             </div>
+            <div class="project-card" id="meeting-min-bot-card">
+                <h3>Meeting Minute Bot</h3>
+                <div id="meeting-desc">
+                    <p>A WhatsApp-integrated tool that turns voice notes into structured meeting documentation. Team leads connect a business number, add their team, and send voice notes or text. The system transcribes, filters casual chatter, and returns formatted minutes...</p>
+                </div>
+                <div id="meeting-full-desc" style="display: none;">
+                    <p>A WhatsApp-integrated tool that turns voice notes into structured meeting documentation. Team leads connect a business number, add their team (no accounts needed for members), and send voice notes or text messages. The system transcribes, filters casual chatter, and returns formatted minutes with attendees, key points, decisions, and action items — delivered back via WhatsApp and archived in a web dashboard. Built with TanStack Start, Bolt Database (row-level security for data isolation), and WhatsApp Cloud API, with admin oversight and full data deletion support for RA 10173 compliance. This web app is still a work in progress, features are under active development and may change.</p>
+                </div>
+                <button class="read-more-btn" id="meetingReadMoreBtn">Read more</button>
+                <div class="project-links">
+                    <a href="https://meeting-minute-bot.lovable.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card" id="stock-balanse-card">
+                <h3>Stock Balanse</h3>
+                <div id="stock-desc">
+                    <p>Stock Balanse is a work-in-progress inventory management system for small to medium businesses. It supports bulk Excel imports, real-time stock tracking, outbound transaction logging with a timestamped audit trail, and a live dashboard showing total stock, low-stock warnings...</p>
+                </div>
+                <div id="stock-full-desc" style="display: none;">
+                    <p>Stock Balanse is a work-in-progress inventory management system for small to medium businesses. It supports bulk Excel imports, real-time stock tracking, outbound transaction logging (sales, damage, transfers) with a timestamped audit trail, and a live dashboard showing total stock, low-stock warnings, and top deducted items over 30 days. Built with React (TanStack Start), TypeScript, Tailwind, and Supabase (auth, PostgreSQL, row-level security for multi-tenant data isolation). Planned features include granular reporting, user roles, and enhanced exports.</p>
+                </div>
+                <button class="read-more-btn" id="stockReadMoreBtn">Read more</button>
+                <div class="project-links">
+                    <a href="https://stock-balanse.bolt.host" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Contact Me -->
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-form">
@@ -388,23 +386,55 @@
         </div>
     </section>
 </div>
-
 <footer>
     <p>Stephen Joshua Ricot – Computer Engineer</p>
 </footer>
-
 <script>
-    // Optional: simple form status handling for Formspree
+    // Meeting Minute Bot toggle
+    const meetingReadBtn = document.getElementById('meetingReadMoreBtn');
+    const meetingShort = document.getElementById('meeting-desc');
+    const meetingFull = document.getElementById('meeting-full-desc');
+    let meetingExpanded = false;
+    meetingReadBtn.addEventListener('click', () => {
+        if (!meetingExpanded) {
+            meetingShort.style.display = 'none';
+            meetingFull.style.display = 'block';
+            meetingReadBtn.textContent = 'Read less';
+            meetingExpanded = true;
+        } else {
+            meetingShort.style.display = 'block';
+            meetingFull.style.display = 'none';
+            meetingReadBtn.textContent = 'Read more';
+            meetingExpanded = false;
+        }
+    });
+    // Stock Balanse toggle
+    const stockReadBtn = document.getElementById('stockReadMoreBtn');
+    const stockShort = document.getElementById('stock-desc');
+    const stockFull = document.getElementById('stock-full-desc');
+    let stockExpanded = false;
+    stockReadBtn.addEventListener('click', () => {
+        if (!stockExpanded) {
+            stockShort.style.display = 'none';
+            stockFull.style.display = 'block';
+            stockReadBtn.textContent = 'Read less';
+            stockExpanded = true;
+        } else {
+            stockShort.style.display = 'block';
+            stockFull.style.display = 'none';
+            stockReadBtn.textContent = 'Read more';
+            stockExpanded = false;
+        }
+    });
+    // Contact form handler
     const form = document.getElementById('contactForm');
     const statusDiv = document.getElementById('formStatus');
-
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             const submitBtn = form.querySelector('button[type="submit"]');
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
-
             const formData = new FormData(form);
             try {
                 const response = await fetch(form.action, {
