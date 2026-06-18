@@ -180,7 +180,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            background: #f9f7f4 url('/public/image.png') center/cover no-repeat;
+            background: #f9f7f4 url('image.png') center/cover no-repeat;
         }
 
         .hero-badge {
@@ -406,25 +406,35 @@
             color: var(--text-muted);
         }
 
+        .about-text-col {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .about-bio-col {
+            flex: 1.2;
+        }
+
+        .about-traits-col {
+            flex: 0.9;
+        }
+
         .traits-list {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
+            gap: 1.25rem;
         }
 
         .trait-item {
             display: flex;
             align-items: flex-start;
-            gap: 1.2rem;
+            gap: 0.9rem;
         }
 
         .trait-icon {
             flex-shrink: 0;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: var(--accent-bg);
             border: 1.5px solid rgba(196,90,58,0.2);
@@ -435,21 +445,23 @@
 
         .trait-icon svg {
             color: var(--accent);
+            width: 18px;
+            height: 18px;
         }
 
         .trait-title {
-            font-size: 0.82rem;
+            font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 0.09em;
             text-transform: uppercase;
             color: var(--primary);
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.25rem;
         }
 
         .trait-desc {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.55;
         }
 
         /* Experience Cards */
@@ -1056,6 +1068,15 @@
                 gap: 2.5rem;
             }
 
+            .about-text-col {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .traits-list {
+                gap: 1rem;
+            }
+
             .about-photo {
                 width: 200px;
                 height: 250px;
@@ -1215,52 +1236,57 @@
                 <div class="about-photo-bg"></div>
                 <img src="Ricot, Stephen Joshua L. (2).JPG" alt="Stephen Joshua Ricot" class="about-photo">
             </div>
-            <!-- Right: bio + traits -->
+            <!-- Right: bio + traits side by side -->
             <div class="about-text-col">
-                <div class="about-intro">Hi, I'm Stephen.</div>
-                <div class="about-text">
-                    <p>Results-driven Computer Engineering graduate with hands-on experience in software implementation, web development, and Agile project coordination. Skilled in SQL, Azure DevOps, and system workflow optimization. Proven ability to manage full project lifecycles, improve system adoption, and support scalable technical solutions.</p>
-                    <div class="about-highlight">
-                        <strong>BS in Computer Engineering</strong> &mdash; Polytechnic University of the Philippines (2020&ndash;2024)
-                        <br><br>
-                        Open to remote, hybrid, or on-site roles in software development, implementation, and project coordination.
+                <!-- Bio sub-column -->
+                <div class="about-bio-col">
+                    <div class="about-intro">Hi, I'm Stephen.</div>
+                    <div class="about-text">
+                        <p>Results-driven Computer Engineering graduate with hands-on experience in software implementation, web development, and Agile project coordination. Skilled in SQL, Azure DevOps, and system workflow optimization. Proven ability to manage full project lifecycles, improve system adoption, and support scalable technical solutions.</p>
+                        <div class="about-highlight">
+                            <strong>BS in Computer Engineering</strong> &mdash; Polytechnic University of the Philippines (2020&ndash;2024)
+                            <br><br>
+                            Open to remote, hybrid, or on-site roles in software development, implementation, and project coordination.
+                        </div>
                     </div>
                 </div>
-                <!-- Trait cards -->
-                <div class="traits-list">
-                    <div class="trait-item">
-                        <div class="trait-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
-                            </svg>
+                <!-- Traits sub-column -->
+                <div class="about-traits-col">
+                    <div class="traits-list">
+                        <div class="trait-item">
+                            <div class="trait-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trait-title">Detail Oriented</div>
+                                <div class="trait-desc">I validate data accuracy, document every process, and ensure nothing slips through the cracks.</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="trait-title">Detail Oriented</div>
-                            <div class="trait-desc">I validate data accuracy, document every process, and ensure nothing slips through the cracks — from SQL query results to client onboarding checklists.</div>
+                        <div class="trait-item">
+                            <div class="trait-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trait-title">Systems Thinker</div>
+                                <div class="trait-desc">I turn complex workflows into efficient, scalable solutions that reduce team friction.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="trait-item">
-                        <div class="trait-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
-                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="trait-title">Systems Thinker</div>
-                            <div class="trait-desc">I turn complex workflows into efficient, scalable solutions — designing customized processes that improve operational efficiency and reduce team friction.</div>
-                        </div>
-                    </div>
-                    <div class="trait-item">
-                        <div class="trait-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="trait-title">Impact Driven</div>
-                            <div class="trait-desc">I measure success by real outcomes — faster onboarding, higher adoption rates, fewer post-deployment issues, and clients who can confidently use the systems I build.</div>
+                        <div class="trait-item">
+                            <div class="trait-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="trait-title">Impact Driven</div>
+                                <div class="trait-desc">I measure success by real outcomes &mdash; faster onboarding, higher adoption, fewer issues.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
